@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vegetable Shop</title>
+    <!--main css-->
+    <link rel="stylesheet" href="main.css" />
+    <!--Boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <!--remix-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!--navigation header-->
+    <header>
+      <a href="index.html" class="logo">VegieShop</a>
+
+      <ul class="navlist">
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="recipe.html">Recipe Ideas</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#"><i class="risearch-2-line"></i></a>
+        <a href="#" id="cart-icon">
+          <i class="ri-shopping-bag-fill"></i>
+          <span id="cart-count" class="cart-count"></span>
+        </a>
+
+        <a href="#"><i class="ri-user-line"></i></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <!-- SHOP IMAGE HEADER -->
+
+    <div class="img-header">
+      <img src="./Images/shop-header.png" alt="image-header" />
+      <div class="promo-text">
+        Get $50 OFF your first order!* Use code: <a href="#">NEW50</a> <br />
+        *Min. order ₱500
+      </div>
+    </div>
+
+    <!-- SHOP NAV BAR -->
+
+    <section class="shop-nav">
+      <div>
+        <input class="filter-button" type="radio" id="All" name="category" value="All" checked />
+        <label for="All">All</label>
+      </div>
+
+      <div>
+        <input class="filter-button" type="radio" id="Fruits" name="category" value="Fruits" />
+        <label for="Fruits">Fruits</label>
+      </div>
+
+      <div>
+        <input class="filter-button" type="radio" id="Vegetables" name="category" value="Vegetables" />
+        <label for="Vegetables">Vegetables</label>
+      </div>
+
+      <div>
+        <input class="filter-button" type="radio" id="Sale" name="category" value="Sale" />
+        <label for="Sale">On Sale</label>
+      </div>
+      <div>
+        <input type="text" class="searchBar" placeholder="Search products..." />
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+
+    <section class="products">
+      <div class="product-cards">
+        <img src="./Images/Mangga.jpg" alt="Mango" />
+        <h3>Mango</h3>
+        <p></p>
+        <span><strong>Price: 50.00</strong> <em>per piece</em></span>
+        <div class="button">
+          <button>Buy Now</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-content" data-aos="fade-up">
+        <div class="newsletter-text">
+          <h2>Get on the List Now!</h2>
+          <p>Sign up with your email address to receive further updates!</p>
+        </div>
+        <form action="#">
+          <input type="email" placeholder="Your email..." required />
+          <input type="submit" value="Subscribe" class="btnnn" />
+        </form>
+      </div>
+    </section>
+
+    <!--footer eieie may bold ni wally dito gagi-->
+
+    <section class="footer" data-aos="fade-down">
+      <div class="footer-box">
+        <h3>VegieShop</h3>
+        <a href="products.html">Products</a>
+        <a href="recipe.html">Recipe</a>
+        <a href="about-us.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Motto</h3>
+        <p>Fresh Picks, Happy Plates – Your Daily Veggie Love!" 🌱🥕</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Socials</h3>
+        <div class="social">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-tiktok-fill"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--Copyright-->
+    <div class="copyright">
+      <div class="end-text">
+        <p>&copy; Copyright 2024 WS 1 Group 5</p>
+      </div>
+
+      <div class="end-image">
+        <img src="./Images/p.png" />
+      </div>
+    </div>
+
+    <script type="module" src="function.js"></script>
+    <!--AOS Anim-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1450,
+      });
+    </script>
+  </body>
+</html>
