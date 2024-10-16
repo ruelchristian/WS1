@@ -27,7 +27,8 @@ if (productExist) {
     <p>${product.description}</p> 
     <span>Price: ₱${product.onSale === true ? `${product.price.toFixed(2) * 0.9} <del>${product.price.toFixed(2)}</del>` : `${product.price.toFixed(2)}`} <em>${product.quantity}</em></span> 
     <div class="button"> 
-      <button>Add to Cart</button> 
+    <button>Add to Cart</button>
+    <button>Buy Now</button>
     </div>
   `;
     return productDiv;
@@ -89,3 +90,21 @@ if (productExist) {
     searchProducts(query);
   });
 }
+
+// Get the cart modal and the cart button
+
+const cartModal = document.getElementById('cartModal');
+const cartButton = document.getElementById('cart-icon');
+const closeCartButton = document.getElementById('closeCartBtn');
+
+// Function to open the cart modal
+cartButton.addEventListener('click', function () {
+  cartModal.showModal();
+  cartModal.style.display = 'block';
+});
+
+// Function to close the cart modal
+closeCartButton.addEventListener('click', function () {
+  cartModal.close();
+  cartModal.style.display = 'none';
+});
