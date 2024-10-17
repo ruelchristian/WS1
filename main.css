@@ -406,6 +406,17 @@ section {
   .nav-right a {
     padding-right: 7px;
   }
+  .newsletter-content form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  .newsletter-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* SHOP CSS*/
@@ -731,8 +742,7 @@ section {
     font-size: 1.5em;
   }
   .about-us {
-    margin-bottom: 5rem;
-    margin-top: 10rem;
+    margin: 20rem 0;
     flex-direction: column;
   }
   .faq {
