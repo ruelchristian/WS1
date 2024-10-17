@@ -409,13 +409,14 @@ section {
   .newsletter-content form {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
   }
   .newsletter-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
   }
 }
 
