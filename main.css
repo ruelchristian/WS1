@@ -405,6 +405,7 @@ section {
   }
   .nav-right a {
     padding-right: 7px;
+    margin: 10px;
   }
   .newsletter-content form {
     display: flex;
@@ -715,7 +716,7 @@ section {
   }
 
   .about-us div img {
-    width: 450px;
+    width: 100vw;
     height: 350px;
   }
   .about-us .contents h1 {
