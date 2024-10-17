@@ -409,7 +409,7 @@ section {
   .newsletter-content form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 230px;
   }
   .newsletter-content {
     display: flex;
