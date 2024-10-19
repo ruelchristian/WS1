@@ -19,7 +19,8 @@ const productExist = document.querySelector('.products');
 if (productExist) {
   function createProductCard(product) {
     const productDiv = document.createElement('div');
-    productDiv.classList.add('product-cards');
+    productDiv.classList.add(`product-cards`);
+    productDiv.dataset.aos = 'fade-up';
 
     productDiv.innerHTML = `
     <img src="${product.image}" alt="${product.name}"> 
@@ -89,4 +90,21 @@ if (productExist) {
     const query = searchBar.value;
     searchProducts(query);
   });
+}
+
+const container = document.querySelector('.container');
+
+if (container) {
+  container.addEventListener('click', (event) => {
+    const panel = event.target.closest('.panel');
+    if (panel) {
+      removeActiveClasses();
+      panel.classList.add('active');
+    }
+  });
+}
+
+function removeActiveClasses() {
+  const panels = document.querySelectorAll('.panel');
+  panels.forEach((panel) => panel.classList.remove('active'));
 }
