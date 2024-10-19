@@ -23,7 +23,7 @@ if (productExist) {
     productDiv.dataset.aos = 'fade-up';
 
     productDiv.innerHTML = `
-    <img src="${product.image}" alt="${product.name}"> 
+    <img loading="lazy" src="${product.image}" alt="${product.name}"> 
     <h3>${product.name} ${product.tagalog === 'none' ? '' : `(${product.tagalog})`}</h3>
     <p>${product.description}</p> 
     <span>Price: ₱${product.onSale === true ? `${product.price.toFixed(2) * 0.9} <del>${product.price.toFixed(2)}</del>` : `${product.price.toFixed(2)}`} <em>${product.quantity}</em></span> 
