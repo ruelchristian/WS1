@@ -26,6 +26,7 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  min-width: 320px;
 }
 
 header {
@@ -754,7 +755,7 @@ section {
 }
 
 .panel5 {
-  background-image: url('https://images.unsplash.com/photo-1595433502559-d8f05e6a1041?auto=format&fit=crop&w=1350&q=80');
+  background-image: url('/Images/NASH.jpg');
 }
 .team-h1 {
   display: flex;
