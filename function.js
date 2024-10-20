@@ -20,7 +20,6 @@ if (productExist) {
   function createProductCard(product) {
     const productDiv = document.createElement('div');
     productDiv.classList.add(`product-cards`);
-    productDiv.dataset.aos = 'fade-up';
 
     productDiv.innerHTML = `
     <img loading="lazy" src="${product.image}" alt="${product.name}"> 
