@@ -540,7 +540,7 @@ section {
   background-color: var(--other-color);
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
-  width: 50%;
+  width: 100%;
   height: 5rem;
   padding: 10px 20px;
   cursor: pointer;
@@ -756,6 +756,21 @@ section {
 
 .panel5 {
   background-image: url('/Images/NASH.jpg');
+}
+.panel6 {
+  background-image: url('/Images/ADAN.jpg');
+}
+.panel7 {
+  background-image: url('/Images/Delatorre.jpg');
+}
+.panel8 {
+  background-image: url('/Images/Ramiso.jpg');
+}
+.panel9 {
+  background-image: url('/Images/morada.jpg');
+}
+.panel10 {
+  background-image: url('/Images/Galindez.jpg');
 }
 .team-h1 {
   display: flex;

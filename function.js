@@ -1,5 +1,6 @@
 import { products } from './products.js';
 
+//HOME PAGE
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
@@ -13,7 +14,7 @@ window.onscroll = () => {
   navlist.classList.remove('open');
 };
 
-//Filter Button function
+//PRODUCT PAGE
 const productExist = document.querySelector('.products');
 
 if (productExist) {
@@ -27,14 +28,11 @@ if (productExist) {
     <p>${product.description}</p> 
     <span>Price: ₱${product.onSale === true ? `${product.price.toFixed(2) * 0.9} <del>${product.price.toFixed(2)}</del>` : `${product.price.toFixed(2)}`} <em>${product.quantity}</em></span> 
     <div class="button"> 
-    <button>Add to Cart</button>
-    <button>Buy Now</button>
+    <button data-name="${product.name}"}">Add to Cart</button>
     </div>
   `;
     return productDiv;
   }
-
-  //Display Filtered  Products
 
   function displayFilteredProducts(filteredProducts) {
     const productSection = document.querySelector('.products');
@@ -45,14 +43,11 @@ if (productExist) {
     });
   }
 
-  //Initial Display Function
   function displayProducts() {
     displayFilteredProducts(products);
   }
 
   displayProducts();
-
-  //Event Listener  for Filter Button
 
   const filterButtons = document.querySelectorAll('.filter-button');
 
@@ -77,13 +72,11 @@ if (productExist) {
     });
   });
 
-  //Search bar filtering
   function searchProducts(query) {
     const filteredProducts = products.filter((product) => product.name.toLowerCase().includes(query.toLowerCase()) || product.tagalog.toLowerCase().includes(query.toLowerCase()));
     displayFilteredProducts(filteredProducts);
   }
 
-  // Search bar functionality
   const searchBar = document.querySelector('.searchBar');
   searchBar.addEventListener('input', () => {
     const query = searchBar.value;
@@ -91,6 +84,13 @@ if (productExist) {
   });
 }
 
+document.querySelectorAll('button[data-name]').forEach((button) => {
+  button.addEventListener('click', (event) => {
+    alert(`🎉 Item Added to Cart! 🛒`);
+  });
+});
+
+//ABOUT US
 const container = document.querySelector('.container');
 
 if (container) {
