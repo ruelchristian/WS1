@@ -513,6 +513,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -780,8 +781,137 @@ section {
   margin-bottom: -5rem;
 }
 
+/* MODAL */
+#cartModal {
+  margin: revert;
+  border: none !important;
+  width: fit-content;
+}
+#cart-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--carrot-color);
+}
+#close {
+  fill: black;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+#close:hover {
+  border-radius: 1000%;
+  fill: red;
+  transform: translateY(-4px);
+}
+#items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.cart-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.cart-details {
+  display: flex;
+  gap: 10px;
+}
+.quantity-input {
+  width: 3.125rem;
+}
+#cartImg {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.remove-btn {
+  width: 20px;
+  fill: hsla(0, 100%, 50%, 0.5);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.remove-btn:hover {
+  fill: hsl(0, 100%, 50%);
+  transform: scale(1.1);
+}
+#cart-footer {
+  background-color: var(--carrot-color);
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+#place-order {
+  padding: 15px 10px;
+  background-color: hsl(143, 88%, 47%);
+  border-radius: 5px;
+  border: none;
+  transition: ease-in-out 0.5s;
+  font-weight: bold;
+  cursor: pointer;
+}
+#place-order:hover {
+  background-color: hsl(143, 96%, 44%);
+  transform: translateY(-4px);
+}
+#place-order:active {
+  background-color: hsl(143, 92%, 59%);
+  transform: translateY(4px);
+}
+
+#shoplink {
+  padding: 10px;
+  border: 2px solid green;
+  color: #01873b;
+}
+/* General styles for the dialog */
+#checkoutModal {
+  margin: revert;
+  border: none !important;
+  width: 50vw;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.address .address-input {
+  margin: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+}
+.billings {
+  margin: 0.5rem;
+}
+#submit-order {
+  margin: 0.5rem;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: hsl(211, 100%, 50%);
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+#submit-order:hover {
+  background-color: hsl(211, 76%, 54%);
+  transform: scale(1.01);
+  color: white;
+}
+#submit-order:active {
+  background-color: hsl(211, 100%, 50%);
+  transform: scale(1.1);
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
+  #cartImg {
+    width: 100px;
+    height: 100px;
+  }
+  .cart-details {
+    flex-direction: column;
+  }
   .team {
     height: auto;
   }
@@ -815,9 +945,22 @@ section {
     left: 20px;
     bottom: 40px;
   }
+
+  #cart-header,
+  #cart-footer {
+    width: 100%; /* Make header and footer full width */
+  }
+
+  #items {
+    padding: 10px; /* Adjust padding as needed */
+  }
 }
 
 @media (max-width: 480px) {
+  #checkoutModal {
+    width: 90vw;
+  }
+
   .team {
     height: auto;
     padding: 10px;
@@ -856,16 +999,15 @@ section {
 
   .shop-nav {
     flex-wrap: wrap;
-    margin: 1rem;
-    gap: 2rem;
-  }
-
-  .products {
-    justify-content: center;
-    align-content: space-around;
-  }
-  .product-cards {
     margin-top: 1rem;
+    gap: 1rem;
+  }
+  .shop-nav label {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  .searchBar {
+    height: 30px;
   }
 
   .recipe-card img {

@@ -1,50 +1,57 @@
 export const products = [
   {
+    id: 0,
     name: 'Santol',
     tagalog: 'none',
     description: 'Round fruit with thick skin.',
-    price: 60, // price in PHP per kilo
+    price: 60,
     category: 'Fruits',
     image: './Images/Santol.webp',
     quantity: 'per kilo',
+    onSale: true,
   },
   {
+    id: 1,
     name: 'Soursop',
     tagalog: 'Guyabano',
     description: 'Green, spiky fruit with flesh.',
-    price: 180, // price in PHP per kilo
+    price: 180,
     category: 'Fruits',
     image: './Images/Guyabano.webp',
     quantity: 'per kilo',
   },
   {
+    id: 2,
     name: 'Star Apple',
     tagalog: 'Kaimito',
     description: 'Sweet, milky flesh fruit.',
-    price: 80, // price in PHP per kilo
+    price: 80,
     category: 'Fruits',
     image: './Images/Kaimito.webp',
     quantity: 'per kilo',
   },
   {
+    id: 3,
     name: 'Watermelon',
     tagalog: 'Pakwan',
     description: 'Large fruit with juicy flesh.',
-    price: 50, // price in PHP per kilo
+    price: 50,
     category: 'Fruits',
     image: './Images/Pakwan.webp',
     quantity: 'per kilo',
   },
   {
+    id: 4,
     name: 'Avocado',
     tagalog: 'Abukado',
     description: 'Creamy fruit with buttery flesh.',
-    price: 150, // price in PHP per kilo
+    price: 150,
     category: 'Fruits',
     image: './Images/Abukado.webp',
     quantity: 'per kilo',
   },
   {
+    id: 5,
     name: 'Apple',
     tagalog: 'Mansanas',
     description: 'Sweet, crisp fruit in colors.',
@@ -52,8 +59,10 @@ export const products = [
     category: 'Fruits',
     image: './Images/Mansanas.webp',
     quantity: 'per kilo',
+    onSale: true,
   },
   {
+    id: 6,
     name: 'Jackfruit',
     tagalog: 'Langka',
     description: 'Spiky exterior, sweet flesh.',
@@ -61,8 +70,10 @@ export const products = [
     category: 'Fruits',
     image: './Images/Langka.webp',
     quantity: 'per kilo',
+    onSale: true,
   },
   {
+    id: 7,
     name: 'Orange',
     tagalog: 'Kahel',
     description: 'Citrus fruit with juicy flesh.',
@@ -72,6 +83,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 8,
     name: 'Strawberries',
     tagalog: 'none',
     description: 'Small, red, sweet fruit.',
@@ -81,6 +93,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 9,
     name: 'Grapes',
     tagalog: 'Ubas',
     description: 'Small, sweet or tart clusters.',
@@ -90,6 +103,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 10,
     name: 'Kiwi',
     tagalog: 'none',
     description: 'Fuzzy fruit with green flesh.',
@@ -99,6 +113,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 11,
     name: 'Dragonfruit',
     tagalog: 'Pitaya',
     description: 'Exotic fruit with sweet flesh.',
@@ -108,6 +123,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 12,
     name: 'Bitter Melon',
     tagalog: 'Ampalaya',
     description: 'Bitter fruit for Filipino dishes.',
@@ -117,6 +133,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 13,
     name: 'Bottle Gourd',
     tagalog: 'Upo',
     description: 'Young gourd for soups.',
@@ -126,6 +143,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 14,
     name: 'Chayote',
     tagalog: 'Sayote',
     description: 'Versatile squash for dishes.',
@@ -135,6 +153,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 15,
     name: 'Eggplant',
     tagalog: 'Talong',
     description: 'Common vegetable in recipes.',
@@ -144,6 +163,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 16,
     name: 'Green Amaranth',
     tagalog: 'Kalunay',
     description: 'Easy-to-cook leafy veggie.',
@@ -153,6 +173,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 17,
     name: 'Hyacinth Beans',
     tagalog: 'Bataw',
     description: 'Edible beans used in cooking.',
@@ -163,6 +184,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 18,
     name: 'Jute Mallow',
     tagalog: 'Saluyot',
     description: 'Popular slimy vegetable.',
@@ -172,6 +194,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 19,
     name: 'Lemongrass',
     tagalog: 'Tanglad',
     description: 'Fragrant herb for dishes.',
@@ -181,6 +204,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 20,
     name: 'Lima Beans',
     tagalog: 'Patani',
     description: 'Climbing beans, edible parts.',
@@ -190,6 +214,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 21,
     name: 'Long Beans',
     tagalog: 'Sitaw',
     description: 'Commonly sautéed or in soups.',
@@ -199,6 +224,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 22,
     name: 'Moringa',
     tagalog: 'Malunggay',
     description: 'Leaves used in many dishes.',
@@ -208,6 +234,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 23,
     name: 'Okra',
     tagalog: 'none',
     description: 'Known for slimy texture.',
@@ -217,6 +244,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 24,
     name: 'Sponge Gourd',
     tagalog: 'Patola',
     description: 'Best consumed young.',
@@ -227,6 +255,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 25,
     name: 'Squash',
     tagalog: 'Kalabasa',
     description: 'Used in many Filipino dishes.',
@@ -236,6 +265,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 26,
     name: 'Winged Beans',
     tagalog: 'Sigarilyas',
     description: 'All parts are edible.',
@@ -245,6 +275,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 27,
     name: 'Sweet Potato',
     tagalog: 'Kamote',
     description: 'Used for tubers and leaves.',
@@ -254,6 +285,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 28,
     name: 'Mango',
     tagalog: 'Mangga',
     description: 'Sweet fruit with rich aroma.',
@@ -264,6 +296,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 29,
     name: 'Banana',
     tagalog: 'Saging',
     description: 'Sweet fruit, fresh or cooked.',
@@ -273,6 +306,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 30,
     name: 'Papaya',
     tagalog: 'none',
     description: 'Sweet fruit in fresh dishes.',
@@ -282,6 +316,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 31,
     name: 'Coconut',
     tagalog: 'Niyog',
     description: 'Used for juice and oil.',
@@ -291,6 +326,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 32,
     name: 'Calamansi',
     tagalog: 'Kalamansi',
     description: 'Small citrus with sweet-sour taste.',
@@ -300,6 +336,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 33,
     name: 'Guava',
     tagalog: 'Bayabas',
     description: 'Sweet, fragrant tropical fruit.',
@@ -309,6 +346,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 34,
     name: 'Lanzones',
     tagalog: 'none',
     description: 'Small, sweet, with a tart taste.',
@@ -318,6 +356,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 35,
     name: 'Lychee',
     tagalog: 'Litsiyas',
     description: 'Sweet fruit with red bumpy skin.',
@@ -327,6 +366,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 36,
     name: 'Mangosteen',
     tagalog: 'none',
     description: 'Tangy-sweet fruit with segments.',
@@ -336,6 +376,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 37,
     name: 'Pineapple',
     tagalog: 'Pinya',
     description: 'Sweet, tangy tropical fruit.',
@@ -346,6 +387,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 38,
     name: 'Pomelo',
     tagalog: 'Suha',
     description: 'Large citrus with sweet-tangy flesh.',
@@ -355,6 +397,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 39,
     name: 'Rambutan',
     tagalog: 'none',
     description: 'Hairy fruit with juicy sweet flesh.',
@@ -365,6 +408,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 40,
     name: 'Bitter Melon',
     tagalog: 'Ampalaya',
     description: 'Bitter fruit in Filipino dishes.',
@@ -374,15 +418,17 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 41,
     name: 'Spinach',
     tagalog: 'none',
     description: 'Leafy green vegetable rich in iron.',
-    price: 30, // price in PHP per kilo
+    price: 30,
     category: 'Vegetables',
     image: './Images/Spinach.webp',
     quantity: 'per kilo',
   },
   {
+    id: 42,
     name: 'Kale',
     tagalog: 'none',
     description: 'Leafy green with a slightly bitter flavor.',
@@ -393,6 +439,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 43,
     name: 'Bell Peppers',
     tagalog: 'none',
     description: 'Crunchy, colorful peppers used in salads.',
@@ -403,6 +450,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 44,
     name: 'Carrots',
     tagalog: 'none',
     description: 'Crunchy, sweet root vegetable.',
@@ -412,6 +460,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 45,
     name: 'Cucumber',
     tagalog: 'Pipino',
     description: 'Fresh, watery vegetable used in salads.',
@@ -421,6 +470,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 46,
     name: 'Cauliflower',
     tagalog: 'none',
     description: 'White florets used in various dishes.',
@@ -430,6 +480,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 47,
     name: 'Pumpkin',
     tagalog: 'Kalabasa',
     description: 'Sweet orange vegetable often used in soups.',
@@ -439,6 +490,7 @@ export const products = [
     quantity: 'per kilo',
   },
   {
+    id: 48,
     name: 'Zucchini',
     tagalog: 'none',
     description: 'Mild, tender green vegetable.',
